@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Статистика</title>
+</head>
+<body>
+<script type="text/javascript" src="../scripts/statistic.js"></script>
+<table id="statisticTable" border="1">
+    <caption>Статистика</caption>
+    <tr>
+        <th>Id</th>
+        <th>Регион</th>
+        <th>Кол-во коментариев</th>
+        <th></th>
+    </tr>
+</table>
+<br/>
+<div id="infoDiv" style="display: none">
+    <table id="statisticCityTable" border="1" >
+
+        <tr>
+            <th>Город</th>
+            <th>Кол-во коментариев</th>
+        </tr>
+    </table>
+    <input value="Скрыть" type="button" onclick="hidenClick()"/>
+</div>
+
+
+</body>
+</html>

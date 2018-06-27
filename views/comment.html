@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Добавление комментария</title>
+
+</head>
+
+<body>
+ <script type="text/javascript" src="../scripts/comment.js"></script>
+<form name="comment" id ="commentForm" action="#" method="post" >
+    <p>Фамилия: <br/>
+        <input type="text" name="surname" placeholder="Введите фамилию" pattern="[А-яЁё]{1,150}" size="40" required></p>
+    <p>Имя: <br/>
+        <input type="text" name="name" placeholder="Введите имя" pattern="[А-яЁё]{1,150}" size="40" required></p>
+    <p>Отчество: <br/>
+        <input type="text" name="patronymic" placeholder="Введите отчество" pattern="[А-яЁё]{1,150}" size="40"></p>
+    <p>Регион: <br/>
+        <select size="1" id="regionsSelect" name="region" required disabled>
+            <option selected disabled value="">>Выберите Регион</option>
+        </select>
+    </p>
+    <p>Город:<br/>
+        <select size="1" id="citySelect" name="city" required disabled>
+            <option selected disabled value="">>Выберите Город</option>
+        </select>
+    </p>
+    <p>Телефон:<br/>
+        <input type="tel" name="contact_number" placeholder="(код города)номер телефона"
+               pattern="^\([0-9]{3,5}\)[0-9]{5,7}$" size="40">
+    </p>
+    <p>E-mail:<br/>
+        <input type="email" name="email" placeholder="example@info.ru" size="40"></p>
+
+    <p>Комментарий:<br/>
+        <textarea name="comment" cols="40" placeholder="Оставте сдесь свой комментарий" required rows="3"></textarea>
+    </p>
+    <p>
+        <input type="submit"  value="Отправить">
+        <input type="reset" value="Очистить">
+    </p>
+</form>
+</body>
+</html>
